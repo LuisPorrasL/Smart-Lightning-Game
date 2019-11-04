@@ -23,6 +23,6 @@ public class PlayerMovement : MonoBehaviour
 
         velocity.y += gravity * Time.deltaTime * Time.deltaTime; //Because physics
 
-        //controller.Move(velocity);
+        controller.Move(velocity);
     }
 }
