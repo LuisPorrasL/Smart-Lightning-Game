@@ -1,4 +1,7 @@
-﻿using System.Collections;
+﻿//Created following the video FIRST PERSON MOVEMENT in Unity - FPS Controller by Brackeys, obtein from https://www.youtube.com/watch?v=_QajrabyTJc
+
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
