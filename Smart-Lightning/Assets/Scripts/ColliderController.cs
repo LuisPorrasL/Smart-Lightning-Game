@@ -6,20 +6,23 @@ public class ColliderController : MonoBehaviour
 {
 
     public Light smartLight;
+    public GameObject sphere;
+    public Material LEDLightON;
+    public Material LEDLightOFF;
 
     void Start()
     {
-        smartLight.enabled = false;
+        TurnLightOff();
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        smartLight.enabled = true;
+        TurnLightON();
     }
 
     private void OnTriggerStay(Collider other)
     {
-        smartLight.enabled = true;
+        TurnLightON();
     }
 
     private void OnTriggerExit(Collider other)
@@ -27,9 +30,16 @@ public class ColliderController : MonoBehaviour
         Invoke("TurnLightOff", 10);
     }
 
-    void TurnLightOff()
+    private void TurnLightON()
+    {
+        smartLight.enabled = true;
+        sphere.GetComponent<Renderer>().material = LEDLightON;
+    }
+
+    private void TurnLightOff()
     {
         smartLight.enabled = false;
+        sphere.GetComponent<Renderer>().material = LEDLightOFF;
     }
 
 }

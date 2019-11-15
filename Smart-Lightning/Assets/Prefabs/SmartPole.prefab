@@ -138,6 +138,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   smartLight: {fileID: 7419295153248882389}
+  sphere: {fileID: 7419295152409715842}
+  LEDLightON: {fileID: 2100000, guid: ea21dbb4e1f7f7d41abae00fc559edd6, type: 2}
+  LEDLightOFF: {fileID: 2100000, guid: 67ee7df3dacbb6c4f86586c56f4280f3, type: 2}
 --- !u!1 &7419295153248882391
 GameObject:
   m_ObjectHideFlags: 0
